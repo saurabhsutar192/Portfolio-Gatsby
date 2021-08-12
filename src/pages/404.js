@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Layout from "../components/Template"
+import Layout from "../components/MainLayout"
 
 const NotFoundPage = () => <Layout>Error 404</Layout>
 

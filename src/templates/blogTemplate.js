@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
 import React from "react"
-import Layout from "../components/Template"
+import Layout from "../components/MainLayout"
 import "../CSS/mainBlog.css"
 
 export default function BlogTemplate({ data }) {
@@ -9,13 +9,14 @@ export default function BlogTemplate({ data }) {
     <Layout>
       <section className="mainBlog">
         <h1>{title}</h1>
-        <footer>
-          Published on: <span>{date}</span>{" "}
-        </footer>
+
         <div
           className="blogHtml"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
+        <footer>
+          Published on: <span>{date}</span>{" "}
+        </footer>
       </section>
     </Layout>
   )
