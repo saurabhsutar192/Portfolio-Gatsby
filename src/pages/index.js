@@ -1,9 +1,9 @@
 import * as React from "react"
 
 import Layout from "../components/Layout"
-import Banner from "../components/banner"
-import About from "../components/about"
-import Skills from "../components/skills"
+import Banner from "../components/Banner"
+import About from "../components/About"
+import Skills from "../components/Skills"
 import "../CSS/home.css"
 import { graphql } from "gatsby"
 
