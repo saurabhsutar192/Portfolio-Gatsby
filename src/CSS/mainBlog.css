@@ -1,0 +1,20 @@
+.mainBlog footer {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
+
+.mainBlog span {
+  font-weight: 600;
+}
+
+.mainBlog h1 {
+  margin-bottom: 40px;
+}
+
+.blogHtml h3 {
+  margin-bottom: 20px;
+}
+.blogHtml {
+  padding: 20px;
+}
