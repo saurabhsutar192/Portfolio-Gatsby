@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Layout from "../components/Layout"
+import Layout from "../components/Template"
 import Banner from "../components/Banner"
 import About from "../components/About"
 import Skills from "../components/Skills"
