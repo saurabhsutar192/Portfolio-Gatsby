@@ -1,15 +1,12 @@
 import * as React from "react"
 
-
 import GitHubIcon from "@material-ui/icons/GitHub"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import "../CSS/layout.css"
 import { Link } from "gatsby"
 
-const Layout = ({ children }) => {
-
-
+function Layout({ children }) {
   return (
     <>
       <div className="layoutContainer">
@@ -51,7 +48,5 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-
 
 export default Layout
