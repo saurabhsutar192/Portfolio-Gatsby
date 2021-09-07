@@ -73,7 +73,7 @@ a > svg {
 .navs a {
   margin-left: 30px;
   text-decoration: none;
-  color: black;
+  color: blue;
 }
 
 .navs a:hover,
