@@ -34,7 +34,7 @@
 
 .aboutContainer {
   margin-top: 40px;
-
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -56,7 +56,7 @@
 
 .about a {
   font-weight: 600;
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -81,8 +81,9 @@
 
 .skill {
   border: 1px solid #ddd;
+  border-radius: 10px;
   width: 220px;
-
+  background: #fff;
   margin: 10px;
   padding: 20px;
   display: flex;

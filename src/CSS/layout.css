@@ -7,10 +7,16 @@ body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   cursor: default;
+  /* color: rgb(70, 70, 70); */
 }
-
+a,
+a > span,
+a > svg {
+  cursor: pointer !important;
+}
 .layoutContainer {
   text-align: center;
+  position: relative;
 }
 
 .NavbarContainer {
@@ -18,6 +24,31 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
+}
+.NavbarContainer::before {
+  content: "";
+  position: absolute;
+  width: 42vw;
+  height: 55vw;
+  right: 0;
+  top: 0%;
+  z-index: -1;
+  filter: grayscale(1);
+  background: url("../images/patterns/bg-pattern-intro-right-desktop.svg")
+    no-repeat right/contain;
+}
+.NavbarContainer::after {
+  content: "";
+  position: absolute;
+  width: 25vw;
+  height: 15vw;
+  left: 0;
+  bottom: 0;
+  transform: rotateY(180deg);
+  filter: grayscale(1);
+  z-index: -1;
+  background: url("../images/patterns/bg-pattern-mobile-nav.svg") no-repeat
+    center right/cover;
 }
 
 .logo {
@@ -28,6 +59,7 @@ body {
 .navs {
   display: flex;
   font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .navs a {
@@ -70,5 +102,13 @@ body {
   }
   .links div {
     margin: 0 5px;
+  }
+  .NavbarContainer::before {
+    width: 55vw;
+    height: 70vw;
+  }
+  .NavbarContainer::after {
+    width: 50vw;
+    height: 30vw;
   }
 }
