@@ -28,6 +28,31 @@ a > svg {
   justify-content: space-between;
   padding: 20px 40px;
 }
+.NavbarContainer::before {
+  content: "";
+  position: absolute;
+  width: 42vw;
+  height: 55vw;
+  right: 0;
+  top: 0%;
+  z-index: -1;
+  filter: grayscale(1);
+  background: url("../images/patterns/bg-pattern-intro-right-desktop.svg")
+    no-repeat right/contain;
+}
+.NavbarContainer::after {
+  content: "";
+  position: absolute;
+  width: 25vw;
+  height: 15vw;
+  left: 0;
+  bottom: 0;
+  transform: rotateY(180deg);
+  filter: grayscale(1);
+  z-index: -1;
+  background: url("../images/patterns/bg-pattern-mobile-nav.svg") no-repeat
+    center right/cover;
+}
 
 .NavbarContainer::after {
   content: "";
