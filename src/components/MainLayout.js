@@ -18,6 +18,9 @@ function Layout({ children }) {
           <Link to="/projects">
             <span>Projects</span>
           </Link>
+          <Link to="/blogs">
+            <span>Blogs</span>
+          </Link>
         </div>
       </div>
       <main>{children}</main>
